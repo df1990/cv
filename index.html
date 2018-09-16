@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV - 2018/09/15</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Font Awesome 4.2.0 -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100regular,100bold" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+
+    <style>
+
+        @page
+        {
+            /*size: auto;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        }
+
+        body
+        {
+            font-family: "Roboto";
+            font-size: smaller;
+            background: #466A5F;
+            background-color: #466A5F;
+            color: #383838;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0;
+            /*margin-top: 2em;*/
+        }
+
+        p.myname
+        {
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            margin-left: 4px;
+        }
+
+        p.mytitle
+        {
+            /*color: #666;*/
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            margin-left: 7px;
+            margin-top: 0px;
+            font-size: 1.3em;
+        }
+
+        p.detail
+        {
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        span.firstname
+        {
+            font-weight: bold;
+            font-size: 2.8em;
+        }
+
+        span.lastname
+        {
+            font-weight: bold;
+            font-weight: lighter;
+            font-size: 2.9em;
+        }
+
+        table
+        {
+            /*background: #d00;*/
+            width: 100%;
+        }
+
+        td.icon
+        {
+            text-align: center;
+            padding-left: 4px;
+        }
+
+        ul
+        {
+            /*background: #aa0;*/
+            margin-top: 0px;
+        }
+
+        ul.myskills
+        {
+            padding-top: 0.5em;
+            padding-left: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        li
+        {
+            margin-bottom: 2px;
+            /*list-style: square;*/
+            list-style-image: url('bullet.png');
+        }
+
+        span.company-name
+        {
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-left: 8px;
+        }
+
+        span.company-date
+        {
+            font-size: 0.9em;
+            padding-left: 8px;
+        }
+
+        div.cv
+        {
+            background: #ebebeb;
+            color: #333;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 3em;
+        }
+
+        div.header
+        {
+            /*background: #f00;*/
+            /*border: 2px solid #f0f;*/
+        }
+
+        div.name
+        {
+            /*background: #0f0;*/
+            display: inline-block;
+            vertical-align: middle;
+            width: 46%;
+        }
+
+        div.details
+        {
+            /*background: #00f;*/
+            display: inline-block;
+            vertical-align: bottom;
+            text-align: right;
+            width: 53%;
+            font-size: 1.0em;
+        }
+
+        div.photo-and-skills
+        {
+            /*background: #00d;*/
+            /*border: 2px solid #f00;*/
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        div.photo
+        {
+            /*background: #f00;*/
+            display: inline-block;
+            vertical-align: middle;
+            /*float: left;*/
+            /*width: 50%;*/
+        }
+
+        div.skills
+        {
+            /*background: #bdc9da;*/
+            display: inline-block;
+            vertical-align: middle;
+            width: 73%;
+            /*float: left;*/
+            font-size: 1.3em;
+            margin: auto;
+            margin-left: 14px;
+        }
+
+        div.separator
+        {
+            clear: both;
+            width: 100%;
+            height: 12px;
+            border-bottom: 4px solid #666;
+        }
+
+        div.separator-invisible
+        {
+            clear: both;
+            width: 100%;
+            height: 1.0em;
+        }
+
+        div.category
+        {
+            width: 100%;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 0.1em;
+            color: #666;
+            border-bottom: 2px solid #888;
+            padding-left: 8px;
+            margin-bottom: 16px;
+        }
+
+        div.category-skills
+        {
+            float: left;
+            width: 75%;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            color: #666;
+            border-bottom: 2x solid #888;
+            padding-left: 8px;
+        }
+
+        div.separator-h
+        {
+            clear: both;
+            width: 100%;
+            height: 2em;
+            /*background: #fa0;*/
+        }
+
+        div.job
+        {
+            /*background: #00e;*/
+            /*border: 2px solid #f00;*/
+            /*width: 100%;*/
+        }
+
+        div.job-company
+        {
+            display: inline-block;
+            vertical-align: top;
+            /*background: #ccc;*/
+            width: 30%;
+            /*border-bottom: 2px dotted #444;*/
+            /*float: left;*/
+        }
+
+        p.job-title
+        {
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-left: 8px;
+            margin-top: 0px;
+            margin-bottom: 6px;
+        }
+
+
+        div.job-vert-separator
+        {
+            display: inline-block;
+            vertical-align: top;
+            width: 0%;
+            /*float: left;*/
+        }
+
+        div.job-details
+        {
+            display: inline-block;
+            vertical-align: top;
+            /*background: #ccb;*/
+            width: 65%;
+            margin-top: 0px;
+            /*float: left;*/
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="cv">
+
+    <div class="header">
+        <div class="name">
+            <p class="myname">
+                <span class="firstname"> DARIUSZ </span> <span class="lastname"> FERTYK </span>
+            </p>
+            <p class="mytitle"> EMBEDDED SOFTWARE DEVELOPER </p>
+        </div> <!-- name -->
+        <div class="details">
+            <table>
+                <tr> <td> <p class="detail"> 0048 503 563 821 </p> </td> <td class="icon"> <i class="fa fa-mobile-phone fa-lg"></i> </td> </tr>
+                <tr> <td> <p class="detail"> dariusz.fertyk@gmail.com </p> </td> <td class="icon"> <i class="fa fa-envelope-o"></i> </td> </tr>
+                <!-- <tr> <td> <p class="detail"> gregoryprogrammer.com/games </p> </td> <td class="icon"> <i class="fa fa-gamepad"></i> </td> </tr> -->
+                <!-- <tr> <td> <p class="detail"> github: gregoryprogrammer </p> </td> <td class="icon"> <i class="fa fa-github"></i> </td> </tr> -->
+                <tr> <td> <p class="detail"> Robocza 17b/99, Poznań 61-517, Poland </p> </td> <td class="icon"> <i class="fa fa-map-marker"></i> </td> </tr>
+            </table>
+        </div> <!-- details -->
+    </div> <!-- header -->
+
+
+    <div class="separator"></div>
+
+
+    <div class="photo-and-skills">
+        <div class="photo">
+            <!-- <img src="./photo_round.png"/> -->
+            <!-- <img src="./photo_round_190x190.png"/> -->
+	    <img src="./df_190.png"/>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="skills">
+            <ul class="myskills">
+	        <strong>Skills</strong>
+                <li>Programming languages:
+                    <strong>C</strong>,
+                    <strong>C++</strong>
+					<strong>Assembly</strong>
+                </li>
+		<li> Microcontrollers:
+		    <strong> AVR, STM32, PIC32, LPC, 8051, nRF51</strong>
+		</li>
+		<li> Good knowledge of:
+		    <strong>Verilog</strong>,
+		    <strong>RTOS</strong>, 
+                    <strong>Linux</strong>, 
+                    <strong>multicore programming</strong>
+		</li>
+                <li> Familiar with: 
+                    <strong>Git</strong>,
+                    <strong>SVN</strong>,
+                    <strong>Make</strong>,
+		    <strong>Bash</strong>,
+		    <strong>Python</strong>,
+		    <strong>Django</strong>,
+			<strong>LoRa</strong>,
+			<strong>Bluetooth Low Energy</strong>
+                    <!-- <strong>UML</strong>, 
+                    <strong>design patterns</strong>-->
+                </li>
+                <!-- <li> Enjoying learning new programming languages and tools </li>-->
+                <!-- <li> Able to work in a fast-paced challenging environment </li>-->
+                <li> Excellent in SW/HW debugging </li>
+		<div class="separator-invisible"></div>
+                <strong>Foreign languages</strong>
+		<li>English - intermediate</li>
+		<li>French - elementary</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="separator-invisible"></div>
+
+
+    <div class="category"> EDUCATION </div>
+
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Poznan University of Technology </span>
+            <!-- <p> Department of Mathematics and Computer Science.</p> -->
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <ul>
+                <li>Master of Science Engineer, graduated in 2016.<br/>Master's thesis: Hardware and software for flying model of quadrocopter</li>
+		<br/>                
+		<li>Bachelor of Science Engineer, graduated in 2013<br/>Bachelor's thesis: Functional testing of D/A converters with serial interfaces.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="separator-invisible"></div>
+    <div class="separator-invisible"></div>
+
+	<div class="category"> ADDITIONAL PROJECTS </div>
+	
+	<div class="job">
+        <div class="job-company">
+            <!--<span class="company-name"> Temperature logger with BLE interface </span>-->
+            <br/>
+            <span class="company-date"> July&nbsp2018&nbsp-present </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Temperature logger with BLE interface </p>
+            <ul>
+		<li> Clarifying system requirements and system key elements </li>
+		<li> Choosing device components (microcontroller, persistent memory, RTC)</li>
+		<li> Design of bluetooth low energy interface </li>
+		<li> C++ application development compliant with Arduino Core </li>
+		<li> Writing documentation </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+	
+	<div class="job">
+        <div class="job-company">
+            <!--<span class="company-name"> AVR assembly code </span>-->
+            <br/>
+            <span class="company-date"> June&nbsp2018&nbsp-&nbspJuly&nbsp2018 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> AVR assembly code for arduino extension board </p>
+            <ul>
+		<li> Interfacing 80x7 LED matrix display </li>
+		<li> Interfacing LM35 temperature sensor</li>
+		<li> Interfacing 4x4 keyboard </li>
+		<li> Showing temperature and pressed key on display </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+	
+    <div class="category"> WORK EXPERIENCE </div>
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Silicon and Software systems </span>
+            <br/>
+            <span class="company-date"> December&nbsp2017&nbsp-present </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Senior Embedded Software Engineer </p>
+            <ul>
+		<li> Medical device communication subsystem development</li>
+		<li> Implementation of persistent storage manager with wear-leveling </li>
+		<li> Porting RS485 based protocol from C to C++ application </li>
+		<li> IoT application development using Microsoft Azure IoT C SDK </li>
+		<li> Communication subsystem end to end testing </li>
+		<li> Bring up of new hardware designed by HW team </li>
+		<li> Unit tests implementation </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+    <div class="separator-h"> &nbsp </div>
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Nokia Solutions and Networks </span>
+            <br/>
+            <span class="company-date"> September&nbsp2016&nbsp-&nbspNovember&nbsp2017 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Embedded Software Engineer </p>
+            <ul>
+		<li> Open Event Machine - event driven data processing framework development </li>
+		<li> Porting benchmark suite from ARM to DSP architecture </li>
+		<li> Unit tests and system component tests implementation </li>
+		<li> Internal tools development (Bash, Python) </li>
+		<li> Conducting speed recruitment in C profile </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+
+    <div class="separator-h"> &nbsp </div>
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Novamedia Innovision </span>
+            <br/>
+            <span class="company-date"> October&nbsp2015&nbsp-&nbspAugust&nbsp2016 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Technical Leader of Hardware and Firmware Department </p>
+            <ul>
+                <li> LED displays for public transport firmware development </li>
+                <li> FPGA based LED display driver concept and firmware development (Verilog) </li>
+		<li> Active audio aplifier firmware development </li>
+		<li> Developing new products based on STM32 and FreeRTOS </li>
+		<li> Adapting existing products to new projects requirements </li>
+                <li> Presenting new products during business meetings </li>
+		<li> Conducting interviews </li>
+		<li> Managing team of developers </li>
+		<li> Formulating internship plans </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+
+    <div class="separator-h"> &nbsp </div>
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Novamedia Innovision </span>
+            <br/>
+            <span class="company-date"> July&nbsp2014&nbsp-&nbspSeptember&nbsp2015 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Hardware and Firmware Engineer </p>
+            <ul>
+                <li> Wireless routers hardware design and testing </li>
+                <li> LED displays for public transport design </li>
+		<li> Railway station display board firmware implementation </li>
+                <li> Universal LCD driver design </li>
+                <li> LCD display supervisor circuit </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+
+    <div class="separator-h"> &nbsp </div>
+
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Samsung Electronics Poland </span>
+            <br/>
+            <span class="company-date"> June&nbsp2013&nbsp-&nbspJune&nbsp2014 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Junior Software Engineer </p>
+            <ul>
+                <li> End user messaging system over DVB-S link </li>
+                <li> Over the air update refactoring </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+
+    <div class="separator-h"> &nbsp </div>
+
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Samsung Electronics Poland </span>
+            <br/>
+            <span class="company-date"> March&nbsp2013&nbsp-&nbspMay&nbsp2013 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Internship </p>
+            <ul>
+                <li> Image processing library (C++, VisualStudio)</li>
+                <li> Linux kernel modules implementation </li>
+                <li> Web application development (JavaScript, Pepper API) </li>
+		<li> Snake game implementation using set-top box </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+
+    <div class="separator-h"> &nbsp </div>
+
+
+    <div class="job">
+        <div class="job-company">
+            <span class="company-name"> Agregaty Polska </span>
+            <br/>
+            <span class="company-date"> July&nbsp2012&nbsp-&nbspFebruary&nbsp2013 </span>
+        </div>
+        <div class="job-vert-separator"> &nbsp </div>
+        <div class="job-details">
+            <p class="job-title"> Firmware Engineer </p>
+            <ul>
+                <li> Modbus library implementation for AVR microcontrollers </li>
+                <li> Segmental speed measurement using RFM22b radio modules </li> 
+                <li> Smart house hardware modules design </li>
+            </ul>
+        </div> <!-- job-details -->
+    </div>
+
+<br/>
+<br/>
+<!-- <br/> -->
+
+<p class="zgoda">
+I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2002, No. 101, item 926 as amended.
+</p>
+
+<!-- <p class="zgoda">
+I hereby authorize you to process my personal data included in my job application for the needs of the recruitment process in accordance with the Personal Data Protection Act dated 29.08.1997 (uniform text: Journal of Laws of the Republic of Poland 2002 No 101, item 926 with further amendments)
+</p>
+ -->
+</div>  <!-- cv -->
+
+</body>
+</html>
